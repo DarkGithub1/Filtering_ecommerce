@@ -1,5 +1,6 @@
 import React from "react";
 import Data from "../Data";
+import { FaCube } from "react-icons/fa6";
 const Button = ({ menuItems, setItem, filerItems }) => {
   return (
     <header className="text-gray-400 bg-gray-900 body-font ">
@@ -16,7 +17,7 @@ const Button = ({ menuItems, setItem, filerItems }) => {
           className="inline-flex items-center  bg-white border-0 py-1 px-3 ml-7 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0 text-black"
           onClick={() => setItem(Data)}
         >
-          all
+          <FaCube/>
         </button>
       </div>
     </header>

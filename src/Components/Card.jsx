@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaCartPlus } from "react-icons/fa6";
 const Card = ({ item }) => {
   return (
     <section className="text-gray-400 bg-gray-900 body-font">
@@ -22,6 +22,7 @@ const Card = ({ item }) => {
                   {val.title}
                 </h2>
                 <p className="mt-1">{val.price}</p>
+                <button className="text-white text-2xl relative left-72 bottom-12"><FaCartPlus/></button>
               </div>
             </div>
           ))}
